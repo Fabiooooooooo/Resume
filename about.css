@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header.bb-1 {
+  display: flex;
+  align-items: center;
+  background-color: darkgrey;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 5px 5px rgb(148, 23, 23);
+}
+nav {
+  flex: 5 1 100px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(75, 35, 35);
+  font-size: 1.5rem;
+}
+ul li a.active {
+  color: rgb(180, 12, 12);
+}
+nav ul li a:hover {
+  color: rgb(190, 10, 10);
+  text-shadow: 2px 2px;
+}
+
+h3 {
+  border-bottom: 3px solid rgb(109, 103, 103);
+  margin: 0rem 20rem;
+}
+div.text {
+  flex: 1 1 400px;
+  margin: 0rem 1rem;
+}
+/*下拉選項*/
+.in {
+  background-color: rgb(124, 48, 61);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.lot1 {
+  position: relative;
+  display: inline-block;
+}
+.lot2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.lot2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.lot2 a:hover {
+  background-color: #c9c5c5;
+}
+.lot1:hover .lot2 {
+  display: block;
+}
